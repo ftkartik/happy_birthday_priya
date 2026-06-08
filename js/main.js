@@ -16,7 +16,7 @@ function createCardSection(text, bgFilename, isSpecial = false){
   const section = document.createElement('section');
   section.className = 'card-section';
   // set background with a subtle overlay
-  section.style.background = `linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.12)), url('../photos/${bgFilename}') center/cover no-repeat`;
+  section.style.background = `linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.12)), url('photos/${bgFilename}') center/cover no-repeat`;
   const card = document.createElement('div');
   card.className = 'card' + (isSpecial ? ' special' : '');
   const p = document.createElement('p');
